@@ -91,10 +91,18 @@ path{
 }
 
 @keyframes neonColor{
+	40%{
+		box-shadow: rgba(255,153,117, 0.7) -12px 0 25px 3px;
+	}
+	57%{
+		box-shadow: rgba(255,153,117, 0.7) 0px 0px 75px 8px;
+	}
 	70%{
-		fill: #E5B7A7;
-	    box-shadow: rgba(255,153,117, 0.8) 1px 0 10px;
+		/*fill: #E5B7A7;*/	    
 	    width: 26.5%;
+	}
+	75%{
+		box-shadow: rgba(255,153,117, 0.7) 12px 0px 25px -5px;		
 	}
 	100%{
 		width: 25%;
