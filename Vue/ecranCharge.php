@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Let's Play</title>
-<link rel="stylesheet" type="text/css" href="../Content/style.css">
+<link rel="stylesheet" type="text/css" href="../Content/css/style.css">
 </head>
 
 <body>
