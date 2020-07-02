@@ -15,4 +15,14 @@ class Session extends Modele {
 		$sql = "INSERT INTO table_user(email_user, name_user, password_user) VALUES(?,?,?)";
 		$signIn = $this->executerRequete($sql, array($email, $name, $password));
 	}
+
+	public function isIdsFree($email, $name){
+		$sql = "SELECT email_user, name_user FROM table_user WHERE email_user = ? OR name_user = ?";
+		$idsFree = $this->executerRequete($sql, array($email, $name));
+	}
+
+	public function changePassword($password, $name){
+		$sql = "UPDATE table_user SET email_password = ? WHERE name_user = ?";
+		$newPass = $this->executerRequete($sql, array($password, $name));
+	}
 }
