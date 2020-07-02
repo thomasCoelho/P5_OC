@@ -12,8 +12,9 @@ class Session extends Modele {
 	}
 
 	public function userSignIn($email, $name, $password){
+		$passwordHash = password_hash($password, PASSWORD_DEFAULT);
 		$sql = "INSERT INTO table_user(email_user, name_user, password_user) VALUES(?,?,?)";
-		$signIn = $this->executerRequete($sql, array($email, $name, $password));
+		$signIn = $this->executerRequete($sql, array($email, $name, $passwordHash));
 	}
 
 	public function isIdsFree($email, $name){
