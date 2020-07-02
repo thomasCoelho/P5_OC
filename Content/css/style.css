@@ -7,9 +7,39 @@
 body{
 	width: 100%;
 	height: 100vh;
-	background-color: white;
-	/*animation: bodyAnim 13s ease forwards 2s;*/
 }
+
+/* ---- ANIMATIONS ---- */
+
+@keyframes lineAnim{
+	75%{
+		stroke-dashoffset: 0;
+	}
+	100%{
+		stroke: 0.2;
+	}
+
+}
+
+@keyframes neonColor{
+	40%{
+		box-shadow: rgba(255,153,117, 0.7) -12px 0 25px 3px;
+	}
+	57%{
+		box-shadow: rgba(255,153,117, 0.7) 0px 0px 75px 8px;
+	}
+	70%{	    
+	    width: 26.5%;
+	}
+	75%{
+		box-shadow: rgba(255,153,117, 0.7) 12px 0px 25px -5px;		
+	}
+	100%{
+		width: 25%;
+	}
+}
+
+/* --- Ecran de chargement --- */
 
 #Calque_1{
 	position: absolute;
@@ -80,37 +110,11 @@ path{
 }
 
 
-@keyframes lineAnim{
-	75%{
-		stroke-dashoffset: 0;
-	}
-	100%{
-		stroke: 0.2;
-	}
+/* FOOTER */
 
-}
-
-@keyframes neonColor{
-	40%{
-		box-shadow: rgba(255,153,117, 0.7) -12px 0 25px 3px;
-	}
-	57%{
-		box-shadow: rgba(255,153,117, 0.7) 0px 0px 75px 8px;
-	}
-	70%{
-		/*fill: #E5B7A7;*/	    
-	    width: 26.5%;
-	}
-	75%{
-		box-shadow: rgba(255,153,117, 0.7) 12px 0px 25px -5px;		
-	}
-	100%{
-		width: 25%;
-	}
-}
-
-@keyframes bodyAnim{
-	to{
-		background: black;
-	}
+#logo{
+	position: absolute;
+	bottom: 1%;
+	left: 50%;
+	transform: translateX(-50%) scale(0.8);
 }
