@@ -214,8 +214,470 @@ font-family: 'Marvel', sans-serif;
 	word-spacing: 1.7px;
 }
 
+/* CONNECTION/INSCRIPTION */
+
+#header-connect{
+	height: 10vh;
+	padding-top: 2vh;
+}
+
+.logo-connect{
+	padding-left: 0.5%;
+}
+
+#section-connect{
+	height: 80vh;
+	width: 60%;
+	padding-top: 20vh;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+#div-connection-connect{
+	width: 60%;
+	position: relative;
+	height: 35vh;
+}
+
+.h2-connect{
+	font-family: 'Marvel';
+	font-size: 160%;
+	letter-spacing: 1.4px;
+	font-weight: 300;
+	margin-bottom: 4vh;
+	text-align: justify;
+}
+
+#form-connect, #form-inscription{
+	display: flex;
+	flex-direction: column;
+}
+
+#form-connect{
+	height: 20vh;
+	width: 100%;
+}
+
+.label-connect, .label-inscription{
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+	font-family: 'Marvel';
+	letter-spacing: 1.2px;
+	font-size: 110%;
+}
+
+.input-connect{
+	border-width: 1.1px 0px 0px;
+	width: 80%;
+}
+
+.bouton-connect{
+	border-radius: 8px;
+	font-size: 15px;
+	border-width: 0px;
+	position: absolute;
+	bottom: 0px;
+	font-family: 'Marvel';
+	letter-spacing: 1.5px;
+}
+
+#submit-connect{
+	padding: 15px;
+	width: 35%;
+	background-color: rgba(178, 227, 194, 0.32);	
+	margin-left: 40%;
+	transform: translateX(-40%);
+}
+
+#div-inscription-connect{
+	position: relative;
+	height: 35vh;
+	width: 30%;
+	margin-left: 10%;
+}
+
+#h2-inscription-connect{
+	text-align: center;
+}
+
+.p-inscription-connect{
+	margin-top: 5vh;
+	font-size: 110%;
+	font-family: 'Hind';
+	font-weight: 300;
+	text-align: center;
+}
+
+#a-inscription-connect{	
+	display: block;
+	width: 68.5%;
+	padding: 15px 10px;
+	text-align: center;
+	background-color: rgba(252, 250, 181, 0.44);
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
+
+#ul-connect{
+	display: flex;
+	justify-content: space-between;
+	width: 50%;
+	height: 10vh;
+	margin: auto;
+}
+
+.li-connect{
+	list-style-type: circle;
+	font-size: 14px;
+	font-family: 'Marvel';
+	letter-spacing: 1.3px;
+}
+
+/* INSCRIPTION */
+
+#section-inscription{
+	height: 80vh;
+}
+
+#h2-inscription{
+	text-align: center;
+	padding-top: 15vh;
+	margin-bottom: 5vh;
+	font-family: 'Marvel';
+	letter-spacing: 1.5px;
+	font-size: 170%;
+	font-weight: 400;
+}
+
+#form-inscription{
+	margin-top: 10vh;
+	width: 25%;
+	margin: auto;
+}
+
+.input-inscription{
+	border-width: 1.1px 0px 0px;
+	width: 100%;
+	height: 3vh;
+}
+
+#submit-inscription{
+	margin-top: 4vh;
+	border-radius: 8px;
+	font-size: 15px;
+	border-width: 0px;
+	font-family: 'Marvel';
+	letter-spacing: 1.5px;
+	width: 50%;
+	padding: 12px;
+	text-align: center;
+	background-color: rgba(209, 204, 255, 0.53);
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
+
+#section-liste-quizzs{
+	padding-top: 6vh;
+	width: 50%;
+	margin: auto;
+}
+
+#figure-quizzs{
+	position: absolute;
+	width: 25%;
+	height: 50vh;
+	top: 15vh;
+	right: 1.5%;
+}
+
+#image-quizzs{
+	position: absolute;
+	width: 40%;
+	height: auto;
+}
+
+#div-infobulle-quizzs{
+	position: absolute;
+	display: table;
+	width: 40%;
+	height: 100px;
+	bottom: 7vh;
+	left: 15%;
+}
+
+#p-infobulle-quizzs{
+	text-align: center;
+	padding: 1vh 5%;
+    background: rgba(247, 196, 158, 1);
+    border-radius: 50%/50px;
+    font-family: 'Marvel';
+    z-index: 1;
+}
+
+#div-infobulle-quizzs #p-infobulle-quizzs{
+	display: table-cell;
+    vertical-align: middle;
+}
+
+#span-infobulle-quizzs{
+	position: absolute;
+ display : inline-block;
+ bottom: 10vh;
+	left: 15%;
+ height : 0;
+ width : 0;
+ border-right : 50px solid transparent;
+ border-bottom : 35px solid rgba(247, 196, 158, 0.95);
+ border-left : 10px solid transparent;
+ z-index: 0;
+}
 
 
+.div-liste-quizzs{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom:5vh;
+}
+
+.div-quizzs{
+	display: table;
+	width: 45%;
+	height: 22.5vh;
+	border-radius: 15px;
+}
+
+.div-liste-quizzs:nth-child(odd) .div-quizzs:nth-child(odd){
+	background-color: rgba(252, 250, 181, 0.34);
+}
+
+.div-liste-quizzs:nth-child(odd) .div-quizzs:nth-child(even){
+	background-color: rgba(209, 204, 255, 0.53);
+}
+
+.div-liste-quizzs:nth-child(even) .div-quizzs:nth-child(odd){
+	background-color: rgba(178, 227, 194, 0.32);
+}
+
+
+
+.div-liste-quizzs:nth-child(even) .div-quizzs:nth-child(even){
+	background-color: rgba(247, 196, 158, 0.4);
+}
+
+.p-quizzs{	
+	font-family: 'Marvel';
+	font-size: 160%;
+	
+	text-align: center;
+}
+
+.div-quizzs .p-quizzs{
+	vertical-align: middle;
+	display: table-cell;font-weight: 700;
+}
+
+/* CREER QUIZZ */
+
+#header-creer-quizz{
+	display: table;
+}
+
+#a-header-creer-quizz{
+	
+	position: absolute;
+	top: 4vh;
+	right: 5%;
+	width: 10%;
+	height: 5vh;
+	border: 1px solid black;
+	border-radius: 8px;
+	text-align: center;
+	padding-top: 1.2vh;
+	font-size: 110%;
+	font-family: 'Marvel';
+}
+
+#section-creer-quizz{
+	display: flex;
+	width: 100%;
+}
+
+#re{
+	width: 20%;
+	height: 80vh;
+}
+
+#div-gabarit{
+	height: 70vh;
+	width: 100%;
+	overflow-y: scroll;
+	margin-top: 5vh;
+}
+
+#div-gabarit::-webkit-scrollbar{
+	width: 0px;
+}
+
+
+.figure-gabarit{
+	position: relative;
+}
+
+.img-gabarit{
+	width: 80%;
+	height: auto;
+	margin-left: 10%;
+	margin-bottom: 1vh;
+}
+
+.span-gabarit{
+	position: absolute;
+	display: block;
+	width: 60%;
+	top: 25%;
+	left: 21%;
+	text-align: center;
+	font-family: 'Marvel';
+}
+
+#fd{
+	display: block;
+	margin-top: 3vh;
+	margin-left: 10%;
+	height: 5vh;
+	width: 80%;
+	border: 1px solid black;
+	border-radius: 8px;
+	background-color: white;
+	text-align: center;
+	padding-top: 1.2vh;
+	font-size: 110%;
+	font-family: 'Marvel';
+}
+
+#div-form{
+	width: 80%;
+}
+
+#form-quizz{
+	width: 90%;
+	margin-left: 5%;
+}
+
+#form-question-title{
+	width: 70%;
+	height: 10vh;
+	margin-top: 5vh;
+	margin-left: 15%;
+	border: 1.5px solid rgba(0,0,0,0.8);
+	border-radius: 8px;
+	font-family: 'Marvel';
+	font-size: 180%;
+	color: black;
+	text-align: center;
+}
+
+#form-question-title::placeholder{
+	font-family: 'Marvel';
+	color: black;
+	text-align: center;
+}
+
+#div-parameter-form-quizz{
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 5vh;
+}
+
+
+#div-parameter-form-time{
+	position: relative;
+	width: 27.5%;
+	margin-left: 2.5%;
+}
+
+#p-question-time{
+	font-family: 'Marvel';
+	font-size: 120%;
+}
+
+#form-question-time{
+	font-family: 'Marvel';
+	font-size: 150%;
+	text-align: center;
+	width: 70px;
+	height: 70px;
+	border: 1px solid black;
+	border-radius: 100%;
+	margin-left: 10%;
+	margin-top: 2vh;
+	padding-bottom: 2vh;
+}
+
+#p-form-time{
+	font-family: 'Marvel';
+	font-size: 90%;
+	position: absolute;
+	bottom: 2vh;
+	left: 15%;
+}
+
+#fieldset-parameter-form-points{
+	border: none;
+	width: 70%;
+	text-align: center;	
+}
+
+#div-container-input-label-points{
+	display: flex;
+	width: 70%;
+	margin-left: 15%;
+	justify-content: space-between;
+}
+
+#p-question-points{
+	font-family: 'Marvel';
+	font-size: 120%;
+	margin-bottom: 2vh;
+}
+
+.div-input-label-points{
+	position: relative;
+	width: 70px;
+	height: 70px;
+}
+
+input[type="radio"].form-question-points{
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	opacity: 0;
+	z-index: 10;
+	cursor: pointer;
+}
+
+input[type="radio"].form-question-points + label{
+	width: 70px;
+	height: 70px;
+	display: inline-block;
+	border: 1px solid #000;
+  	border-radius: 50%;
+  	text-align: center;
+  	padding-top: 25%; 	
+}
+
+input[type="radio"].form-question-points:checked + label {
+	border: 2px solid black;
+}
+
+.form-question-label-points{
+	font-family: 'Marvel';
+	font-size: 160%;
+
+}
 
 
 /* FOOTER */
