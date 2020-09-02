@@ -2,6 +2,7 @@
 require_once 'Controller/controllerQuizz.php';
 require_once 'Controller/controllerAccueil.php';
 require_once 'Controller/controllerSession.php';
+require_once 'Model/modeleUser.php';
 require_once 'Vue/vue.php';
 
 class Routeur {
@@ -9,6 +10,7 @@ class Routeur {
   private $ctrlQuizz;
   private $ctrlAccueil;
   private $ctrlConnection;
+
 
   public function __construct() {
    
@@ -65,7 +67,16 @@ class Routeur {
 
       if ($_GET['action'] == 'Inscription') {
         $this->ctrlConnection = new ControllerUser();
-        $this->ctrlConnection->vueInscription();
+        $this->ctrlConnection->vueInscription(null, null);
+      }
+
+      if ($_GET['action'] == 'inscriptionTraitement') {
+        $this->ctrlConnection = new ControllerUser();
+        $this->ctrlAccueil = new ControllerAccueil(); 
+        $email = $_POST['email'];
+        $pseudo = $_POST['pseudo'];       
+        $this->ctrlConnection->inscription();
+
       }
 
 
