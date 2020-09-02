@@ -19,7 +19,7 @@ abstract class Modele {
     if ($this->bdd == null) {
       // Création de la connexion
       try{
-        $this->bdd = new PDO('mysql:host=localhost;dbname=p5;port=3308;charset=utf8', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+        $this->bdd = new PDO('mysql:host=localhost;dbname=p5_quizz;port=3308;', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
       }
       catch(Exception $e)
       {

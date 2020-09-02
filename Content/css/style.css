@@ -111,6 +111,11 @@ path{
 
 /* ACCUEIL */
 
+a{
+	text-decoration: none;
+	color: black;
+}
+
 #header-accueil{
 	position: relative;
 	width: 100%;
@@ -479,6 +484,37 @@ font-family: 'Marvel', sans-serif;
 
 /* CREER QUIZZ */
 
+#form-creer-quizz{
+	height: 90vh;
+	width: 100%;
+}
+
+#input-title-quizz{
+	margin-top: 42vh;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	height: 6vh;
+	width: 50%;
+	border-radius: 8px;
+	border-style: solid;
+	font-family: 'Marvel';
+	font-size: 160%;
+	text-align: center;
+}
+
+#submit-title-quizz{
+	width: 20%;
+	height: 3vh;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border-top-width: 0px;	
+	margin-left: 50%;
+	transform: translateX(-50%);
+	border-style: solid;
+	font-family: 'Marvel';
+	font-size: 115%;
+}
+
 #header-creer-quizz{
 	display: table;
 }
@@ -509,7 +545,7 @@ font-family: 'Marvel', sans-serif;
 }
 
 #div-gabarit{
-	height: 70vh;
+	height: 65vh;
 	width: 100%;
 	overflow-y: scroll;
 	margin-top: 5vh;
@@ -525,9 +561,9 @@ font-family: 'Marvel', sans-serif;
 }
 
 .img-gabarit{
-	width: 80%;
+	width: 70%;
 	height: auto;
-	margin-left: 10%;
+	margin-left: 15%;
 	margin-bottom: 1vh;
 }
 
@@ -541,18 +577,19 @@ font-family: 'Marvel', sans-serif;
 	font-family: 'Marvel';
 }
 
-#fd{
+#submit-question{
+	position: absolute;
 	display: block;
 	margin-top: 3vh;
-	margin-left: 10%;
+	left: 2.5%;
 	height: 5vh;
-	width: 80%;
+	width: 15%;
 	border: 1px solid black;
 	border-radius: 8px;
 	background-color: white;
 	text-align: center;
-	padding-top: 1.2vh;
-	font-size: 110%;
+	padding-top: 0.5vh;
+	font-size: 120%;
 	font-family: 'Marvel';
 }
 
@@ -679,6 +716,178 @@ input[type="radio"].form-question-points:checked + label {
 
 }
 
+#div-form-reponse{
+	margin-top: 10vh;
+	width: 95%;
+	margin-left: 2.5%;
+}
+
+.div-form-reponse-input{
+	margin-top: 3vh;
+	display: flex;
+	justify-content: space-between;
+}
+
+.form-input-reponse{
+	width: 100%;
+	height: 13.5vh;
+	border-radius: 8px;
+	border-width: 0px;
+}
+
+.div-form-input-radio{
+	position: relative;
+	width: 47.5%;
+}
+
+.form-radio-reponse{
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+.div-form-reponse-input:nth-child(0n+1) .div-form-input-radio:nth-child(0n+1) .form-input-reponse:nth-child(0n+1){
+	background-color: rgba(252, 250, 181, 0.34);
+}
+
+.div-form-reponse-input:nth-child(0n+1) .div-form-input-radio:nth-child(0n+2) .form-input-reponse:nth-child(0n+1){
+	background-color: rgba(209, 204, 255, 0.53);
+}
+
+.div-form-reponse-input:nth-child(0n+2) .div-form-input-radio:nth-child(0n+1) .form-input-reponse:nth-child(0n+1){
+	background-color: rgba(178, 227, 194, 0.32);
+}
+
+.div-form-reponse-input:nth-child(0n+2) .div-form-input-radio:nth-child(0n+2) .form-input-reponse:nth-child(0n+1){
+	background-color: rgba(247, 196, 158, 0.4);
+}
+
+input[type="text"]:focus{
+	outline: none;
+}
+
+.form-input-reponse{
+	padding-left: 5%;
+	font-size: 130%;
+	font-family: 'Marvel';
+}
+
+.form-input-reponse::placeholder{
+	font-size: 130%;
+	font-family: 'Marvel';
+}
+
+/* --- PLAY QUIZZ -- */
+
+#button-play-quizz{
+	position: absolute;
+	top: 4vh;
+	right: 2vw;
+	width: 10%;
+	height: 6vh;
+	border-radius: 8px;
+	font-family: 'Marvel';
+	font-size: 120%;
+	font-weight: 800;
+	background-color: rgba(178, 227, 194, 0.32);
+	border-width: 0px; 
+}
+
+#section-play-quizz{
+	height: 80vh;
+}
+
+#header-section-play-quizz{
+	display: flex;
+	flex-direction: row;
+	width: 50%;
+	margin: auto;
+	justify-content: space-between;
+	padding-top: 15vh;
+}
+
+#span-time-section-play-quizz{
+	padding-top: 3.5vh;
+}
+
+#span-question-section-play-quizz{
+	padding-top: 3vh;
+}
+
+#span-time-section-play-quizz, #span-question-section-play-quizz{
+	display: inline-block;
+	width: 8vh;
+	height: 8vh;
+	margin-top: 0.5vh;	
+	border: 1px solid black;
+	border-radius: 100%;
+}
+
+#header-section-play-quizz #span-time-section-play-quizz,
+#header-section-play-quizz #span-question-section-play-quizz,
+#header-section-play-quizz #p-section-play-quizz{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#span-time-section-play-quizz, #span-question-section-play-quizz, #p-section-play-quizz{
+	font-family: 'Marvel';
+}
+
+#p-section-play-quizz{
+	display: inline-block;
+	height: 9vh;
+	border: 1px solid black;
+	border-radius: 8px;
+	width: 70%;
+	padding-top: 3vh;
+	font-size: 150%;
+}
+
+#span-question-section-play-quizz{
+
+}
+
+#div-container-play-quizz{
+	width: 55%;
+	margin: auto;
+	padding-top: 10vh;
+}
+
+.div-flex-play-quizz{
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.a-play-quizz{
+	display: block;
+	width: 47.5%;
+	height: 12.5vh;
+	margin-bottom: 3vh;
+	border-radius: 8px;
+	text-align: center;
+	font-family: 'Marvel';
+	font-size: 135%;
+	padding-top: 4.5vh;
+}
+
+.div-flex-play-quizz:nth-child(0n+1) .a-play-quizz:nth-child(0n+1){
+	background-color: rgba(252, 250, 181, 0.34);
+}
+
+.div-flex-play-quizz:nth-child(0n+1) .a-play-quizz:nth-child(0n+2){
+	background-color: rgba(209, 204, 255, 0.53);
+}
+
+.div-flex-play-quizz:nth-child(0n+2) .a-play-quizz:nth-child(0n+1){
+	background-color: rgba(178, 227, 194, 0.32);
+}
+
+.div-flex-play-quizz:nth-child(0n+2) .a-play-quizz:nth-child(0n+2){
+	background-color: rgba(247, 196, 158, 0.4);
+}
 
 /* FOOTER */
 

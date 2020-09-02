@@ -1,8 +1,5 @@
-	<link rel="stylesheet" type="text/css" href="../Content/css/style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Marvel:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
 <header id="header-connect">
-	<img class="logo-connect" src="../Content/images/logo.png">
+	<img class="logo-connect" src="Content/images/logo.png">
 </header>
 
 <section id="section-inscription">
@@ -12,9 +9,9 @@
 		<input class="input-inscription" type="email" name="email">
 		<label class="label-inscription" for="password">MOT DE PASSE</label>
 		<input class="input-inscription" type="password" name="password">
-		<label class="label-inscription" for="nom">NOM</label>
-		<input class="input-inscription" type="text" name="nom">
-		<label class="label-inscription" for="prenom">PRÉNOM</label>
+		<label class="label-inscription" for="nom">PSEUDO</label>
+		<input class="input-inscription" type="text" name="pseudo">
+		<label class="label-inscription" for="pseudo">PRENOM</label>
 		<input class="input-inscription" type="text" name="prenom">
 		<input id="submit-inscription" type="submit" value="ENREGISTRER">
 	</form>
