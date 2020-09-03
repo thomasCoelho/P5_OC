@@ -12,15 +12,7 @@ private $session;
 		$this->session = new Session();
 	}
 
-	function vueConnection(){
-		try {
-	    	$vue = new Vue('Connexion');
-			$vue->generer(array());
-		} 
-		catch (Exception $e) {
-		    echo $e->getMessage(), "\n";
-		}
-	}
+	
 
 	function vueInscription($messageMail, $messagePseudo){
 		try {
@@ -55,6 +47,35 @@ private $session;
 		}
 	}
 
+	function vueConnection(){
+		try {
+	    	$vue = new Vue('Connexion');
+			$vue->generer(array());
+		} 
+		catch (Exception $e) {
+		    echo $e->getMessage(), "\n";
+		}
+	}
+
+	function isIdsCorrect(){
+		if(isset($_POST['email']) AND isset($_POST['password'])){
+        	$email = htmlspecialchars($_POST['email']);
+        	$password = htmlspecialchars($_POST['password']);
+			if($email != null AND $password != null){
+				$this->session->userConnect($email);
+				$pseudoTest = $this->session->userConnect($email);
+				$passSecure = htmlspecialchars($_POST['password']);
+				$passok = password_verify($passSecure, $pseudoTest);
+				if ($passok) {
+			        $_SESSION['pseudo'] = 'pseudoCorrect';
+			        header('Location:index.php?action=Accueil');			        
+        		}
+        		else{
+           			header('Location:index.php?action=AdminConnect');
+            		setcookie('wrongPass','Mauvais identifiants',time() + 15, null, null, false, true);
+          		} 
+	}}
+}
 
 
 }
