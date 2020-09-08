@@ -71,7 +71,7 @@ private $session;
 			        header('Location:index.php?action=Accueil');			        
         		}
         		else{
-           			header('Location:index.php?action=AdminConnect');
+           			header('Location:index.php?action=Connexion');
             		setcookie('wrongPass','Mauvais identifiants',time() + 15, null, null, false, true);
           		} 
 	}}

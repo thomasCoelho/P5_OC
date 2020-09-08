@@ -19,7 +19,7 @@
 	 		 
 	</div>
 	<div id="div-form">
-		<form id="form-quizz" action="index.php?action=creerQuestionTraitement" method="post">
+		<form id="form-quizz" action="Application/script.php" method="post">
 			<input id="form-question-title" type="text" name="form-question-title" placeholder="CLIQUEZ POUR ECRIRE VOTRE QUESTION">
 			<div id="div-parameter-form-quizz">
 				<div id="div-parameter-form-time">
@@ -66,10 +66,10 @@
 						<input class="form-input-reponse" type="text" name="reponse4" placeholder="Réponse 4">
 						<input class="form-radio-reponse" type="radio" for="reponse" name="reponse">
 					</div>
-					<input type="hidden" name="id-question" value="<?php echo($question['id_question']); ?>">
+					<input id="input-id-quizz" type="hidden" name="id-question" value="<?php echo($question['id_question']); ?>">
 				</div>
 			</div>
-			<input id="submit-question" type="submit" value="Ajouter une question">
+			<button id="submit-question" type="submit">Ajouter une question</button>
 		</form>
 	</div>
 </section>
